@@ -1,9 +1,9 @@
 from flask import Flask, url_for, render_template
 from flask_sqlalchemy import SQLAlchemy
-
+import os
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///cafes.db"
-app.config['SECRET_KEY'] = 'kidwithbatrang'
+app.config["SQLALCHEMY_DATABASE_URI"] = (os.environ.get['DATABASE_URL'], 'sqlite:///cafes.db')
+app.config['SECRET_KEY'] = os.environ.get['SECRET_KEY']
 db = SQLAlchemy(app)
 class Cafe(db.Model):
     id = db.Column(db.Integer, primary_key=True)

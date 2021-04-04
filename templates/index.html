@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <style>
+    p {
+    margin-top: 60px;
+    font-size: 1.4rem;
+  line-height: 1.4;
+}
+    .bill{
+    border: 2px;
+    border-radius:13px;
+    }
+    h1{
+    color:#151515;
+    }
+    h3{
+    color:#343f56;
+    letter-spacing: 3px;
+    }
+    body{
+    background : #8fd6e1;
+    }
+    .pop{
+    padding-left:10%;
+    padding-top:5%;
+    min-height:80vh;
+    background : #8fd6e1;
+
+    }
+    #hair{
+    animation: my 1s infinite linear;
+    transform-origin: left;
+    transform-box: fill-box;
+    }
+    @keyframes my{
+    0%{ transform: rotateX(0deg); }
+    50%{ transform: rotateX(20deg); }
+    100%{ transform: rotateX(0deg); }
+    }
+    .fill{
+    padding-left: 20%;
+
+    }
+    #face{
+    animation: my 1s infinite linear;
+    transform-origin: left;
+    transform-box: fill-box;
+    }
+    @keyframes my{
+    0%{ transform: rotateX(0deg); }
+    50%{ transform: rotateX(20deg); }
+    100%{ transform: rotateX(0deg); }
+    }
+#Group_2{
+    animation: my 1s infinite linear;
+    transform-origin: right;
+    transform-box: fill-box;
+    }
+    @keyframes my{
+    0%{ transform: rotateZ(0deg); }
+    50%{ transform: rotateZ(20deg); }
+    100%{ transform: rotateZ(0deg); }
+    }
+    #left_hand1{
+    animation: my 1s infinite linear;
+    transform-origin: left;
+    transform-box: fill-box;
+    }
+    @keyframes my{
+    0%{ transform: rotateZ(0deg); }
+    50%{ transform: rotateZ(20deg); }
+    100%{ transform: rotateZ(0deg); }
+    }
+    .vill{
+    position:absolute;
+    right: 10%;
+    bottom:10%;
+    }
+     .box {
+        width:600px;
+        padding:5%;
+        padding-top: 3%;
+        padding-left: 3%;
+        position: relative;
+        line-height: 4;
+        height:360px;
+        border:2px solid rgba(255, 255, 255, 0.18);
+        border-radius : 13px;
+        background : white;
+        background : linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+
+        }
+        .filter{
+
+        animation: cut 2s  linear;
+        }
+        @keyframes cut {
+        0%{transform:translate(0px,150px); opacity:0}
+        50%{transform:translate(0px,75px); opacity:0}
+        100%{transform:translate(0px, 0px); opacity:1}
+        }
+        .lit{
+        padding-left:8%;
+        padding-top:2%;
+        animation: cutter 2s  linear;
+        }
+        @keyframes cutter {
+        0%{transform:translate(-30px,0px); opacity:0}
+        100%{transform:translate(0px, 0px); opacity:1}
+        }
+        .qit{
+
+        }
+        @media screen and (max-width: 1000px) {
+  .pop{
+    padding-left:10%;
+    padding-top: 30%;
+    min-height:100vh;
+  }
+  .fill{
+  padding-top: 30%;
+
+  }
+}
+    </style>
+</head>
+<body>
+ <div class="lit"><h3>Coffee and Wifi</h3></div>
+
+<div class="pop">
+
+    <div class="container-fluid">
+        <div class="row filter">
+    <div class="col-lg-6 sm-12 box">
+     <h1>London Cafes</h1>
+        <div>
+        <p>By click this button you will redirect to page where you can find cafe in london and is it work friendly</p>
+            </div>
+        <div class="vill">
+         <a href="{{ url_for('hello') }}"><button type="button" class="btn btn-primary bill"> Click here</button></a>
+            </div>
+    </div>
+            <div class="col-lg-6 sm-12 fill">
+<svg width="500" height="500" viewBox="0 0 817 621" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="817" height="621" fill="#8fd6e1"/>
+<g id="undraw_Order_confirmed_re_g0if 1">
+<g id="left_hand1">
+<path id="left_part" d="M605.615 35.6956C606.115 32.1437 605.295 28.5317 603.31 25.544C601.325 22.5563 598.313 20.4005 594.845 19.4852C591.377 18.5698 587.693 18.9584 584.492 20.5774C581.292 22.1964 578.796 24.9333 577.478 28.2694L546.561 63.7138L555.633 89.0505L586.726 47.6352C588.754 48.2852 590.901 48.4823 593.015 48.2128C595.128 47.9433 597.157 47.2137 598.958 46.0754C600.758 44.9371 602.288 43.4177 603.438 41.6243C604.588 39.831 605.331 37.8072 605.615 35.6956Z" fill="#FFB7B7"/>
+<path id="left_part_2" d="M476.658 172L576 63.7508L562.6 42L438 149.592L476.658 172Z" fill="#3F3D56"/>
+</g>
+<path id="hair" d="M457.446 50.7239C465.193 42.8683 474.567 36.8063 484.91 32.9647C491.548 30.5052 498.774 28.9857 505.715 30.3824C512.655 31.7791 519.219 36.5805 521.155 43.3902C522.738 48.9585 521.103 54.954 518.646 60.1957C516.189 65.4375 512.909 70.2982 510.922 75.7356C508.894 81.2836 508.284 87.2502 509.148 93.0936C510.011 98.9371 512.32 104.472 515.865 109.197C519.411 113.922 524.08 117.686 529.449 120.149C534.818 122.611 540.717 123.694 546.611 123.298C539.791 124.212 533.505 127.417 526.84 129.123C520.174 130.828 512.307 130.713 507.354 125.937C502.113 120.885 502.008 112.67 502.261 105.395C502.638 94.5801 503.015 83.7651 503.391 72.9501C503.583 67.4346 503.747 61.7424 501.758 56.5945C499.769 51.4466 495.042 46.9388 489.524 46.9857C485.341 47.0212 481.639 49.555 478.285 52.0537C474.931 54.5525 471.381 57.2185 467.214 57.5901C463.048 57.9618 458.291 54.8787 458.603 50.7076L457.446 50.7239Z" fill="#2F2E41"/>
+<g id="Group_2">
+<path id="Vector" d="M299.591 333.489C296.132 334.407 292.44 334.081 289.216 332.572C285.991 331.064 283.458 328.477 282.096 325.304C280.734 322.13 280.638 318.589 281.826 315.352C283.014 312.115 285.404 309.407 288.542 307.741L319.671 274L346 279.435L308.969 314.088C309.879 315.931 310.355 317.941 310.364 319.979C310.373 322.016 309.915 324.031 309.021 325.88C308.127 327.73 306.819 329.37 305.19 330.684C303.56 331.999 301.649 332.956 299.591 333.489H299.591Z" fill="#FFB7B7"/>
+<path id="Vector_2" d="M420.143 186.466L342.628 283.766L319 272.918L410.11 131.073L420.143 186.466Z" fill="#3F3D56"/>
+</g>
+<path id="Vector_3" d="M355.474 502.29L337 502L339.222 564.966H355.471L355.474 502.29Z" fill="#FFB7B7"/>
+<path id="Vector_4" d="M480.61 463.572L460.429 476.528L500.797 525.093L514.471 516.314L480.61 463.572Z" fill="#FFB7B7"/>
+<path id="Vector_5" d="M515.093 509.61L488.163 526.898L488.162 526.899C483.611 529.822 480.407 534.432 479.255 539.717C478.103 545.001 479.098 550.527 482.02 555.078L482.378 555.636L526.468 527.329L515.093 509.61Z" fill="#2F2E41"/>
+<path id="Vector_6" d="M487.8 271.301C487.8 271.301 442.96 122.373 428.55 120.361C414.14 118.348 390.922 158.574 390.922 158.574C360.819 196.982 329.778 321.395 329.778 321.395C329.778 321.395 381.524 324.633 419.351 344.758C457.178 364.883 501.819 343.739 501.819 343.739L487.8 271.301Z" fill="#3F3D56"/>
+<path id="Vector_7" opacity="0.1" d="M487.8 271.301C487.8 271.301 442.96 122.373 428.55 120.361C414.14 118.348 396.819 158.982 396.819 158.982C381.819 220.982 329.778 321.395 329.778 321.395C329.778 321.395 381.524 324.633 419.351 344.758C457.178 364.884 501.819 343.739 501.819 343.739L487.8 271.301Z" fill="black"/>
+<path id="Vector_8" d="M448.193 222.382V297.217L457 405.621L501 487.621L480 502.621L420 424.621L396.269 347.172L359 518.621L331 516.621L350.446 278.91L387.347 212L448.193 222.382Z" fill="#2F2E41"/>
+<path id="Vector_9" d="M405.803 154.36C391.803 168.36 404.803 183.36 404.803 183.36L388.803 219.36L451.803 236.36L473.819 137.982L458.819 121.982C428.819 120.982 428.803 120.36 428.803 120.36C423.546 125.504 405.803 154.36 405.803 154.36Z" fill="#6C63FF"/>
+<path id="Vector_10" d="M476.356 127.79C473.495 125.678 470.243 124.155 466.788 123.308C463.334 122.462 459.746 122.309 456.233 122.859C452.719 123.409 449.349 124.651 446.319 126.512C443.289 128.374 440.658 130.818 438.579 133.703C422.741 155.756 408.096 191.364 428.274 235.775C460.673 307.085 488.867 343.59 500.329 343.586C500.829 343.59 501.327 343.512 501.802 343.354C508.857 340.961 519.058 329.022 520.905 318.502C521.566 314.736 521.409 309.491 516.905 305.889C503.97 295.543 480.747 263.328 473.503 220.925C469.5 197.496 477.264 176.153 484.481 162.376C487.53 156.675 488.422 150.066 486.993 143.761C485.565 137.456 481.912 131.877 476.704 128.047L476.356 127.79Z" fill="#3F3D56"/>
+<g id="face">
+<path id="face_2" d="M454.931 107.061C474.813 107.061 490.931 90.9429 490.931 71.0607C490.931 51.1784 474.813 35.0607 454.931 35.0607C435.049 35.0607 418.931 51.1784 418.931 71.0607C418.931 90.9429 435.049 107.061 454.931 107.061Z" fill="#2F2E41"/>
+<path id="Vector_11" d="M456.679 103.524C469.521 96.5039 474.24 80.4024 467.22 67.5603C460.2 54.7183 444.099 49.9986 431.256 57.0187C418.414 64.0389 413.695 80.1404 420.715 92.9824C427.735 105.825 443.836 110.544 456.679 103.524Z" fill="#FFB7B7"/>
+<path id="Vector_12" d="M406.425 78.2677H444.69L445.083 72.7739L447.045 78.2677H452.937L453.714 67.3792L457.603 78.2677H469.004V77.7283C468.995 70.1478 465.98 62.8802 460.62 57.52C455.26 52.1598 447.992 49.1447 440.412 49.1361H435.017C427.436 49.1447 420.169 52.1598 414.809 57.52C409.448 62.8802 406.433 70.1478 406.425 77.7283V78.2677Z" fill="#2F2E41"/>
+</g>
+<path id="Vector_13" d="M463.223 98.015L479.553 92.7163V53.0607H448.708L449.472 53.8231C460.097 64.434 471.913 102.08 463.223 98.015Z" fill="#2F2E41"/>
+<path id="Vector_14" d="M357.396 565.001L325.395 565H325.394C319.985 565 314.798 567.149 310.974 570.973C307.149 574.798 305 579.985 305 585.393V586.056L357.395 586.058L357.396 565.001Z" fill="#2F2E41"/>
+</g>
+</svg>
+
+    </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>
